@@ -19,7 +19,13 @@ public class telaPrincipal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 telaEmpresaCadastro i= new telaEmpresaCadastro();
+                setVisible(true);
+                dispose();
             }
         });
+    }
+    public static void main ( String []args){
+        telaPrincipal l = new telaPrincipal();
+        l.setVisible(true);
     }
 }
