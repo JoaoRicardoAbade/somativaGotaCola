@@ -24,8 +24,4 @@ public class telaPrincipal extends JFrame {
             }
         });
     }
-    public static void main ( String []args){
-        telaPrincipal l = new telaPrincipal();
-        l.setVisible(true);
-    }
 }
