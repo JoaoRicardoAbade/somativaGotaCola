@@ -42,6 +42,7 @@ public class telaRegistrar extends JFrame {
         botaoCancelar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                telaInicial t = new telaInicial();
                 dispose();
             }
         });
