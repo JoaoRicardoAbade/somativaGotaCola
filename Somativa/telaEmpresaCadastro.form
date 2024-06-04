@@ -20,7 +20,7 @@
           <grid row="1" column="5" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value=""/>
+          <text value="ewojwj0"/>
         </properties>
       </component>
       <component id="803c9" class="javax.swing.JButton" binding="botaoCancelar">
