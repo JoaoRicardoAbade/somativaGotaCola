@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 public class telaPrincipal extends JFrame {
     private JPanel painelPrincipal;
     private JButton cadastroEmpresaBtn;
+    private JButton LerSaldoBtn;
 
     public telaPrincipal() throws HeadlessException {
         setSize(900, 600);
@@ -19,6 +20,14 @@ public class telaPrincipal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 telaEmpresaCadastro i= new telaEmpresaCadastro();
+                setVisible(true);
+                dispose();
+            }
+        });
+        LerSaldoBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                telaLerSaldo p= new telaLerSaldo();
                 setVisible(true);
                 dispose();
             }
