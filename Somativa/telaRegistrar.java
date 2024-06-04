@@ -26,7 +26,7 @@ public class telaRegistrar extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String nomeArquivo = "Somativa/Usuarios.txt";
-
+                // criando o escritor
                 try {
                     FileWriter escritor = new FileWriter(nomeArquivo, true);
                     escritor.write(textEmail.getText() + "|" + textSenha.getText() + "\n");
@@ -42,6 +42,7 @@ public class telaRegistrar extends JFrame {
         botaoCancelar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                telaInicial t = new telaInicial();
                 dispose();
             }
         });
