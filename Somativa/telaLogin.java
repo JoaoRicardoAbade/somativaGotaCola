@@ -37,7 +37,7 @@ public class telaLogin extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String nomearquivo = "Somativa/Usuarios.txt";
-
+                //criando leitor e lendo arquivos
                 try {
                     BufferedReader leitor = new BufferedReader(new FileReader(nomearquivo));
                     String linha;

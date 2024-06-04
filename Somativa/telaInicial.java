@@ -13,6 +13,7 @@ public class telaInicial extends JFrame {
     private JButton botaoLogar;
 
     public telaInicial() throws HeadlessException{
+        //tela inicial
         super();
         setTitle("Tela Login");
         setContentPane(Inicial);
