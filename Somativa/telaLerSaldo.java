@@ -21,11 +21,12 @@ public class telaLerSaldo extends JFrame {
         setContentPane(painelLerSaldo);
         setVisible(true);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        //registar saldo botao
         registrarSaldo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String nomeArquivoSaldo = "Somativa/FluxoDeCaixa.txt";
-
+                // criando o escritor
                 try {
                     FileWriter escritor = new FileWriter(nomeArquivoSaldo, true);
                     escritor.write(ganhosText.getText() + "|" + gastosText.getText() + "\n");
