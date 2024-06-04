@@ -16,6 +16,7 @@ public class telaPrincipal extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
 
+        //um listener foi adicionado ao cadastro da empresa
         cadastroEmpresaBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -24,6 +25,7 @@ public class telaPrincipal extends JFrame {
                 dispose();
             }
         });
+       //adicionar um listener
         LerSaldoBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
