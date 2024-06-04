@@ -4,10 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 
 public class telaPrincipal extends JFrame {
     private JPanel painelPrincipal;
@@ -19,14 +15,8 @@ public class telaPrincipal extends JFrame {
         setContentPane(painelPrincipal);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
-        String nomeArquivo = "Somativa/Cadastro.txt";
-//        try{
-//            BufferedReader leitor = new BufferedReader(new FileReader(nomeArquivo));
-//
-//        }
 
-
-
+        //um listener foi adicionado ao cadastro da empresa
         cadastroEmpresaBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -35,6 +25,7 @@ public class telaPrincipal extends JFrame {
                 dispose();
             }
         });
+       //adicionar um listener
         LerSaldoBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
